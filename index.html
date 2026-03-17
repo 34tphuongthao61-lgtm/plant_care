@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Tưới Cây Tự Động - Plant Care</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; padding: 20px; }
+        .dashboard { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        h2 { color: #2e7d32; text-align: center; }
+        .stat { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
+        .status-on { color: #2e7d32; font-weight: bold; }
+        .btn { display: block; width: 100%; padding: 10px; margin-top: 20px; background-color: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer; text-align: center; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h2>Trạm Theo Dõi Cây Trồng</h2>
+        <div class="stat"><span>Độ ẩm đất:</span> <strong>65%</strong></div>
+        <div class="stat"><span>Nhiệt độ:</span> <strong>28°C</strong></div>
+        <div class="stat"><span>Độ pH:</span> <strong>6.5</strong></div>
+        <div class="stat"><span>Trạng thái bơm:</span> <span class="status-on">ĐANG TẮT</span></div>
+        <button class="btn" onclick="alert('Lưu ý: Để điều khiển thật, bạn cần kết nối Backend Python!')">BẬT TƯỚI THỦ CÔNG</button>
+        <p style="font-size: 12px; color: gray; margin-top: 15px; text-align: center;">Dữ liệu từ hệ thống: <i>plant_care</i></p>
+    </div>
+</body>
+</html>
